@@ -11,7 +11,8 @@
 	* `NoiseMaker` can `makeNoise`
 	* `Animal` is a `NoiseMaker` and `Eater`
 		* `Horse` is an `Animal` and `Rideable`
-		* `Chicken` is an `Animal` and a `Produce` which `yield` an `EdibleEgg` if `hasBeenFertilized` flag is `false`.
+		* `Chicken` is an `Animal` and a `Produce` which 
+		`yield` an `EdibleEgg` if `hasBeenFertilized` flag is `false`.
 
 	* `Rider` can `mount` and `dismount` a `Rideable` object.
 	* `Botanist` can `plant` a `Crop` in a `CropRow`.
@@ -22,10 +23,12 @@
 			* `Tractor` is a `FarmVehicle` which can `harvest` a `Crop`.
 
 		* `Aircraft` are `Vehicle` which can  `fly`
-			* `CropDuster` is a `FarmVehicle` and `Aircraft` which can `fertilize` a `CropRow`
+			* `CropDuster` is a `FarmVehicle` and `Aircraft` which can 
+			`fertilize` a `CropRow`
 
 
-	* `Produce` can `yield` an `Edible` object depending on their `hasBeenFertilized` [flag](https://en.wikipedia.org/wiki/Boolean_flag).
+	* `Produce` can `yield` an `Edible` object depending on their 
+	`hasBeenFertilized` [flag](https://en.wikipedia.org/wiki/Boolean_flag).
 		* `Crop` is a `Produce` which can `yield` an `Edible` object depending on its `hasBeenHarvested` and `hasBeenFertilized` flag.
 			* `CornStalk` is a `Crop` which can `yield` a `EarCorn`
 			* `TomatoPlant` is a `Crop` which can `yield` a `Tomato`
