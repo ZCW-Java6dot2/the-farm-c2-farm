@@ -1,4 +1,10 @@
 package Vehicle;
 
-public class Aircraft extends Vehicle implements Fly {
+import Interfaces.Flyable;
+
+public class Aircraft extends Vehicle implements Flyable {
+
+    public void fly() {
+
+    }
 }

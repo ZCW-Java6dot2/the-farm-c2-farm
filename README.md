@@ -29,7 +29,8 @@
 
 	* `Produce` can `yield` an `Edible` object depending on their 
 	`hasBeenFertilized` [flag](https://en.wikipedia.org/wiki/Boolean_flag).
-		* `Crop` is a `Produce` which can `yield` an `Edible` object depending on its `hasBeenHarvested` and `hasBeenFertilized` flag.
+		* `Crop` is a `Produce` which can `yield` an `Edible` object depending on its 
+		`hasBeenHarvested` and `hasBeenFertilized` flag.
 			* `CornStalk` is a `Crop` which can `yield` a `EarCorn`
 			* `TomatoPlant` is a `Crop` which can `yield` a `Tomato`
 

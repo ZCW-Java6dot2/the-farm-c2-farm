@@ -1,4 +1,4 @@
-package Vehicle;
+package Interfaces;
 
 public interface FarmVehicle {
 

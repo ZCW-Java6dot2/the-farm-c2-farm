@@ -1,4 +1,14 @@
 package Person;
 
-public class Person {
+import Animal.Animal;
+
+public class Person extends Animal {
+
+    public void eat() {
+
+    }
+
+    public void makeNoise() {
+
+    }
 }
