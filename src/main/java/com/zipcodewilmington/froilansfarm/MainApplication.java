@@ -11,7 +11,4 @@ public class MainApplication {
 
     //TODO run application
     Farm farm = new Farm();
-    Chicken chicken = new Chicken();
-    Farmer farmer = new Farmer();
-
 }
