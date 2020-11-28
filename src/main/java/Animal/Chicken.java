@@ -1,11 +1,9 @@
 package Animal;
 
+import Farm.Silo;
 import Interfaces.Produce;
 
 public class Chicken extends Animal implements Produce {
-    public void eat() {
-
-    }
 
     public String makeNoise() {
         return "buk buk";
@@ -21,7 +19,7 @@ public class Chicken extends Animal implements Produce {
     }
 
     @Override
-    public void eat(Produce p) {
+    public void yield(Silo silo) {
 
     }
 

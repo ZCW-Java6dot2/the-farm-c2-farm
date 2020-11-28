@@ -53,7 +53,7 @@ public class HorseTest {
         //Given
         Boolean expected = false;
         //When
-        Boolean actual = stables.get(0).getHorseList().get(0).dismount(rider);
+        Boolean actual = stables.get(0).getHorseList().get(0).dismount();
         //Then
         Assert.assertEquals(expected, actual);
     }
