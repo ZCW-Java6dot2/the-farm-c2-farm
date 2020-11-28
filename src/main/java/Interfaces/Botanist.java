@@ -4,5 +4,5 @@ import Farm.Crop;
 
 public interface Botanist {
 
-    void plant(Crop cropType);
+    <T extends Crop> void plant(T cropType);
 }
