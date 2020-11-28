@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Stable {
 
-    List<Horse> horseList = new ArrayList<>();
+    private List<Horse> horseList = new ArrayList<>();
 
     public List<Horse> getHorseList() {
         return horseList;

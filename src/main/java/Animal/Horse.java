@@ -5,8 +5,8 @@ import Interfaces.Rideable;
 import Person.Person;
 
 public class Horse extends Animal implements Rideable {
-    Boolean mountDisMount;
-    Person rider;
+    private Boolean mountDisMount;
+    private Person rider;
 
     public Person getRider() {
         return rider;

@@ -1,17 +1,14 @@
 package com.zipcodewilmington.froilansfarm;
 import Animal.Horse;
 import Farm.*;
-import Person.Person;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class StableTest {
 
-    Farm farm= new Farm();
     Horse horse1 = new Horse();
     Horse horse2 = new Horse();
     Horse horse3= new Horse();

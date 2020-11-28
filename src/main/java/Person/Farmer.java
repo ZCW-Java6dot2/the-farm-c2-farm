@@ -4,9 +4,9 @@ import Farm.Crop;
 import Farm.CropRow;
 import Interfaces.Botanist;
 import Interfaces.Produce;
-import Interfaces.Rider;
 
-public class Farmer extends Person implements Rider, Botanist {
+
+public class Farmer extends Person implements  Botanist {
 
     @Override
     public <T extends Crop> void plant(T cropType, int numOfCrops) {
