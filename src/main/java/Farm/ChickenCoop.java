@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ChickenCoop {
+    public ChickenCoop() {
+    }
 
     public List<Chicken> getChickenList() {
         return chickenList;
