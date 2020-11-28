@@ -1,6 +1,7 @@
 package Vehicle;
 
 import Farm.Field;
+import Farm.Silo;
 import Person.Person;
 
 public abstract class FarmVehicle<T extends Person> extends Vehicle{
@@ -32,5 +33,5 @@ public abstract class FarmVehicle<T extends Person> extends Vehicle{
         this.mountDisMount = mountDisMount;
     }
 
-    abstract boolean operate(Field field);
+    abstract boolean operate(Field field, Silo silo);
 }

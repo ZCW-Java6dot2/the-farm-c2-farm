@@ -22,12 +22,6 @@ public class Person extends Animal {
     return "talk talk";
     }
 
-
-    @Override
-    public void eat(Produce p) {
-
-    }
-
     public String getName() {
         return name;
     }

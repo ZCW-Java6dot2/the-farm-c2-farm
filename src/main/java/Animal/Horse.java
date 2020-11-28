@@ -1,5 +1,7 @@
 package Animal;
 
+import Farm.Silo;
+import Interfaces.Edible;
 import Interfaces.Produce;
 import Interfaces.Rideable;
 import Person.Person;
@@ -24,15 +26,6 @@ public class Horse extends Animal implements Rideable {
         this.mountDisMount = mountDisMount;
     }
 
-    public void eat() {
-
-    }
-
-    @Override
-    public void eat(Produce p) {
-
-
-    }
     public String makeNoise() {
      return "Neigh Neigh";
     }

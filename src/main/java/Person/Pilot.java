@@ -1,15 +1,8 @@
 package Person;
 
-import Interfaces.Flyer;
-
-public class Pilot extends Person implements Flyer {
+public class Pilot extends Person {
 
     public Pilot(String name) {
         super(name);
-    }
-
-    @Override
-    public void fly() {
-
     }
 }

@@ -1,7 +1,6 @@
 package Person;
 
 import Farm.Crop;
-import Farm.CropRow;
 import Interfaces.Botanist;
 import Interfaces.Produce;
 import Farm.Field;
@@ -13,11 +12,10 @@ public class Farmer extends Person implements Botanist {
     }
 
     @Override
-    public <T extends Crop> void plant(Field field, T cropType, int numOfPlants) {
-       CropRow<T> cropRow = new CropRow<T>();
-
+    public <T extends Crop> void plant(Field field, T plantType, String plantName, int numOfPlants) {
+       Crop<T> cropRow = new Crop<T>(plantName);
         for (int i = 0; i < numOfPlants; i++) {
-            cropRow.getCropRow().add(cropType);
+            cropRow.getCropRow().add(plantType);
         }
         field.getCropRowList().add(cropRow);
     }

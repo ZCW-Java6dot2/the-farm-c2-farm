@@ -5,5 +5,5 @@ import Farm.Field;
 
 public interface Botanist {
 
-    <T extends Crop> void plant(Field field, T cropType, int numOfPlants);
+    <T extends Crop> void plant(Field field, T plantType, String plantName, int numOfPlants);
 }

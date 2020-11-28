@@ -11,67 +11,67 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Silo {
-    List<Capsicum> capsicumInventory;
-    List<Carrot> carrotInventory;
-    List<EarCorn> cornInventory;
-    List<EarOfWheat> wheatInventory;
-    List<Egg> eggInventory;
-    List<Tomato> tomatoInventory;
+    List<Capsicum> capsicum;
+    List<Carrot> carrot;
+    List<EarCorn> corn;
+    List<EarOfWheat> wheat;
+    List<Egg> egg;
+    List<Tomato> tomato;
 
     public Silo() {
-        capsicumInventory = new ArrayList<>(0);
-        carrotInventory = new ArrayList<>(0);
-        cornInventory = new ArrayList<>(0);
-        wheatInventory = new ArrayList<>(0);
-        eggInventory = new ArrayList<>(0);
-        tomatoInventory = new ArrayList<>(0);
+        capsicum = new ArrayList<>(0);
+        carrot = new ArrayList<>(0);
+        corn = new ArrayList<>(0);
+        wheat = new ArrayList<>(0);
+        egg = new ArrayList<>(0);
+        tomato = new ArrayList<>(0);
     }
 
-    public List<Capsicum> getCapsicumInventory() {
-        return capsicumInventory;
+    public List<Capsicum> getCapsicum() {
+        return capsicum;
     }
 
-    public void setCapsicumInventory(List<Capsicum> capsicumInventory) {
-        this.capsicumInventory = capsicumInventory;
+    public void setCapsicum(List<Capsicum> capsicum) {
+        this.capsicum = capsicum;
     }
 
-    public List<Carrot> getCarrotInventory() {
-        return carrotInventory;
+    public List<Carrot> getCarrot() {
+        return carrot;
     }
 
-    public void setCarrotInventory(List<Carrot> carrotInventory) {
-        this.carrotInventory = carrotInventory;
+    public void setCarrot(List<Carrot> carrot) {
+        this.carrot = carrot;
     }
 
-    public List<EarCorn> getCornInventory() {
-        return cornInventory;
+    public List<EarCorn> getCorn() {
+        return corn;
     }
 
-    public void setCornInventory(List<EarCorn> cornInventory) {
-        this.cornInventory = cornInventory;
+    public void setCorn(List<EarCorn> corn) {
+        this.corn = corn;
     }
 
-    public List<EarOfWheat> getWheatInventory() {
-        return wheatInventory;
+    public List<EarOfWheat> getWheat() {
+        return wheat;
     }
 
-    public void setWheatInventory(List<EarOfWheat> wheatInventory) {
-        this.wheatInventory = wheatInventory;
+    public void setWheat(List<EarOfWheat> wheat) {
+        this.wheat = wheat;
     }
 
-    public List<Egg> getEggInventory() {
-        return eggInventory;
+    public List<Egg> getEgg() {
+        return egg;
     }
 
-    public void setEggInventory(List<Egg> eggInventory) {
-        this.eggInventory = eggInventory;
+    public void setEgg(List<Egg> egg) {
+        this.egg = egg;
     }
 
-    public List<Tomato> getTomatoStock() {
-        return tomatoInventory;
+    public List<Tomato> getTomato() {
+        return tomato;
     }
 
-    public void setTomatoStock(List<Tomato> tomatoStock) {
-        this.tomatoInventory = tomatoStock;
+    public void setTomato(List<Tomato> tomato) {
+        this.tomato = tomato;
     }
 }

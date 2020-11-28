@@ -1,6 +1,7 @@
 package Vehicle;
 
 import Farm.Field;
+import Farm.Silo;
 import Interfaces.Rideable;
 import Person.Person;
 import Person.Farmer;
@@ -13,11 +14,11 @@ public class Tractor extends FarmVehicle implements Rideable {
     }
 
     @Override
-    boolean operate(Field field) {
-        if(field.hasBeenFertilized) {
+    boolean operate(Field field, Silo silo) {
+        if(isMountDisMount() && field.hasBeenFertilized) {
             field.setHasBeenHarvested(true);
+            field.yield(silo);
         }
-
         return true;
     }
 
