@@ -1,13 +1,20 @@
 package Vehicle;
 
-import Interfaces.FarmVehicle;
+import Farm.Field;
+import Interfaces.Rideable;
+
+public class Tractor extends FarmVehicle implements Rideable {
 import Person.Person;
 
-public class Tractor extends Vehicle implements FarmVehicle {
 
+    @Override
+    boolean operate(Field field) {
+        return false;
+    }
 
-    public void operate() {
-        //Will harvest
+    @Override
+    public void makeNoise() {
+
     }
 
     @Override

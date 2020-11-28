@@ -2,7 +2,7 @@ package Farm;
 
 import Person.Pilot;
 import Vehicle.CropDuster;
-import Interfaces.FarmVehicle;
+import Vehicle.FarmVehicle;
 
 import java.util.ArrayList;
 import java.util.List;
