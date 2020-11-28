@@ -1,8 +1,25 @@
 package Farm;
 
+import Items.CornStalk;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class CropRow<Crop> {
-    List<Crop> cropList = new ArrayList<>();
+public class CropRow<T extends Crop> {
+
+    private ArrayList<T> cropRow;
+    private boolean hasBeenFertilized;
+
+    public <T extends Crop> CropRow(){
+        this.cropRow = new ArrayList<>();
+    }
+
+    public ArrayList<T> getCropRow() {
+        return cropRow;
+    }
+
+    public void setCropRow(ArrayList<T> cropRow) {
+        this.cropRow = cropRow;
+    }
 }
+
