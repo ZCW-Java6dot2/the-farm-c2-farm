@@ -2,7 +2,7 @@ package Interfaces;
 
 public interface Eater {
 
-    void eat();
+    void eat(Produce p);
 
     //This is mine - Munir
 }
