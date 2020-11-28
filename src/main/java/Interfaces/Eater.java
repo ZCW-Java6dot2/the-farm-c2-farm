@@ -2,6 +2,6 @@ package Interfaces;
 
 public interface Eater {
 
-    void eat();
+    void eat(Produce p);
 
 }
