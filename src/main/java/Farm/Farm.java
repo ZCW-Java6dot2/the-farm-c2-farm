@@ -22,7 +22,7 @@ public class Farm {
     FarmHouse farmHouse;
     Field field;
     List<FarmVehicle> farmVehicleList = new ArrayList<>();
-    CropDuster cropDuster = new CropDuster();
+//    CropDuster cropDuster = new CropDuster();
     Pilot froilanda = new Pilot();
 
 }

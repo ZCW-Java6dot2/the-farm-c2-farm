@@ -2,9 +2,9 @@ package Interfaces;
 
 import Person.Person;
 
-public interface Rideable {
+public interface Rideable<T extends Person> {
 
-     Boolean mount(Person p);
-     Boolean dismount(Person p);
+     <T extends Person> Boolean mount(T p);
+     <T extends Person> Boolean dismount();
 
 }

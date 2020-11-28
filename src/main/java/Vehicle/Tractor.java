@@ -2,10 +2,10 @@ package Vehicle;
 
 import Farm.Field;
 import Interfaces.Rideable;
-
-public class Tractor extends FarmVehicle implements Rideable {
 import Person.Person;
 
+public class Tractor extends FarmVehicle implements Rideable {
+    private Person person;
 
     @Override
     boolean operate(Field field) {
@@ -13,8 +13,8 @@ import Person.Person;
     }
 
     @Override
-    public void makeNoise() {
-
+    public String makeNoise() {
+        return "hummmmmmmmmmmmmmmmmmm";
     }
 
     @Override
@@ -23,7 +23,7 @@ import Person.Person;
     }
 
     @Override
-    public Boolean dismount(Person p) {
+    public Boolean dismount() {
         return null;
     }
 }

@@ -44,7 +44,7 @@ public class Horse extends Animal implements Rideable {
     }
 
     @Override
-    public Boolean dismount(Person p) {
+    public Boolean dismount() {
         setMountDisMount(false);
         return this.mountDisMount;
     }
