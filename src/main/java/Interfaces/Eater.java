@@ -1,8 +1,9 @@
 package Interfaces;
 
+import Farm.Silo;
+
 public interface Eater {
 
-    void eat(Produce p);
+    void eat(Edible food, int howMuchEaten, Silo silo);
 
-    //This is mine - Munir
 }

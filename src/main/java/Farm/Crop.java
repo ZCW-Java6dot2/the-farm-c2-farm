@@ -1,22 +1,38 @@
 package Farm;
 
+
 import Interfaces.Produce;
 
-public abstract class Crop implements Produce {
 
-    protected static boolean hasBeenFertilized;
-    protected static boolean hasBeenHarvested;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Crop() {
-        this.hasBeenFertilized = false;
-        this.hasBeenHarvested = false;
+public class Crop<T extends Crop> implements Produce {
+    private String name;
+    private List<Crop> cropRow;
+
+    public Crop(String name) {
+        this.name = name;
+        this.cropRow = new ArrayList<>();
     }
-    public Crop(boolean hasBeenFertilized, boolean hasBeenHarvested) {
-        this.hasBeenFertilized = hasBeenFertilized;
-        this.hasBeenHarvested = hasBeenHarvested;
+
+    @Override
+    public void yield(Silo silo) {
     }
 
-    public void yield() {
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Crop> getCropRow() {
+        return cropRow;
+    }
+
+    public void setCropRow(List<Crop> cropRow) {
+        this.cropRow = cropRow;
     }
 }

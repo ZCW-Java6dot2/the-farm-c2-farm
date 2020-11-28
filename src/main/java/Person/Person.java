@@ -2,13 +2,17 @@ package Person;
 
 import Animal.Animal;
 import Interfaces.Produce;
-import Interfaces.Rider;
 
 public class Person extends Animal {
-    public Person() {
+    private String name;
 
+    public Person() {
+        this.name = "";
     }
 
+    public Person(String name) {
+        this.name = name;
+    }
 
     public void eat() {
 
@@ -18,9 +22,11 @@ public class Person extends Animal {
     return "talk talk";
     }
 
+    public String getName() {
+        return name;
+    }
 
-    @Override
-    public void eat(Produce p) {
-
+    public void setName(String name) {
+        this.name = name;
     }
 }

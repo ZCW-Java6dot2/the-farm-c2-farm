@@ -1,7 +1,9 @@
 package Interfaces;
 
+import Farm.Silo;
+
 public interface Produce {
 
-    void yield();
+    void yield(Silo silo);
 
 }
