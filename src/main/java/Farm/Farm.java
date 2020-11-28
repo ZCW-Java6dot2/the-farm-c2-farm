@@ -34,13 +34,7 @@ public class Farm {
         this.farmHouse = new FarmHouse(froiland, froilanda);
     }
 
-    public List<Stable> getStableList() {
-        return stableList;
-    }
-
-    public void setStableList(List<Stable> stableList) {
-        this.stableList = stableList;
-    }
+    private List<Stable> stableList = new ArrayList<>();
 
     public List<ChickenCoop> getChickenCoop1() {
         return chickenCoop1;
