@@ -1,6 +1,8 @@
 package Interfaces;
 
+import Farm.Crop;
+
 public interface Botanist {
 
-    void plant();
+    void plant(Crop cropType);
 }
