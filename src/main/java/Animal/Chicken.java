@@ -7,7 +7,8 @@ public class Chicken extends Animal implements Produce {
 
     }
 
-    public void makeNoise() {
+    public String makeNoise() {
+        return "buk buk";
 
     }
 
@@ -16,6 +17,11 @@ public class Chicken extends Animal implements Produce {
     }
 
     public void hasBeenFertilized() {
+
+    }
+
+    @Override
+    public void eat(Produce p) {
 
     }
 }

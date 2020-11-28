@@ -2,5 +2,5 @@ package Interfaces;
 
 public interface NoiseMaker {
 
-    void makeNoise();
+    String makeNoise();
 }
