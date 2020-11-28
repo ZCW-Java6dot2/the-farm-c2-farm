@@ -3,13 +3,12 @@ package Items;
 import Farm.Crop;
 import Interfaces.Produce;
 
-public class CornStalk extends Crop implements Produce {
-
-    public CornStalk() {
+public class CarrotPlant extends Crop implements Produce {
+    public CarrotPlant() {
         super(hasBeenFertilized, hasBeenHarvested);
     }
 
-    public CornStalk(boolean hasBeenFertilized, boolean hasBeenHarvested) {
+    public CarrotPlant(boolean hasBeenFertilized, boolean hasBeenHarvested) {
         super(hasBeenFertilized, hasBeenHarvested);
         this.hasBeenFertilized = hasBeenFertilized;
         this.hasBeenHarvested = hasBeenHarvested;
