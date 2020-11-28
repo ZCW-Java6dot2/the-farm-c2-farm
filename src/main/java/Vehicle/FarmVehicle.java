@@ -4,12 +4,11 @@ import Farm.Field;
 import Person.Person;
 
 public abstract class FarmVehicle<T extends Person> extends Vehicle{
-    protected static Person person;
-    protected static boolean mountDisMount;
+    protected Person person;
+    protected boolean mountDisMount;
 
     public FarmVehicle() {
         this.person = null;
-        this.mountDisMount = false;
     }
 
     public FarmVehicle(Person person, boolean mountDisMount) {

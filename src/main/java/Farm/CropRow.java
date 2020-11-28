@@ -1,9 +1,7 @@
 package Farm;
 
-import Items.CornStalk;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class CropRow<T extends Crop> {
 

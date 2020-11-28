@@ -4,9 +4,8 @@ import Interfaces.Flyer;
 
 public class Pilot extends Person implements Flyer {
 
-
-    public Pilot() {
-        super();
+    public Pilot(String name) {
+        super(name);
     }
 
     @Override

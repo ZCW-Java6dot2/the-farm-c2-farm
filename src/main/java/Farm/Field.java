@@ -8,9 +8,11 @@ public class Field {
     public boolean hasBeenHarvested = false;
     List<CropRow> cropRowList;
 
-    public Field(List<CropRow> cropRowList) {
-        this.cropRowList = cropRowList;
+    public Field() {
+
+        cropRowList = new ArrayList<>(0);
     }
+
 
     public boolean isHasBeenFertilized() {
         return hasBeenFertilized;
@@ -35,10 +37,5 @@ public class Field {
     public void setCropRowList(List<CropRow> cropRowList) {
         this.cropRowList = cropRowList;
     }
-
-    public Field() {
-        cropRowList = new ArrayList<>(0);
-    }
-
 
 }

@@ -10,7 +10,6 @@ public class CropDuster extends FarmVehicle implements Rideable, Flyable {
     private Pilot pilot;
 
     public CropDuster(Pilot pilot) {
-        super(pilot, mountDisMount);
         this.pilot = pilot;
     }
 

@@ -3,27 +3,39 @@ package Vehicle;
 import Farm.Field;
 import Interfaces.Rideable;
 import Person.Person;
+import Person.Farmer;
 
 public class Tractor extends FarmVehicle implements Rideable {
-    private Person person;
+    private Farmer farmer;
+
+    public Tractor(Farmer farmer) {
+        this.farmer = farmer;
+    }
 
     @Override
     boolean operate(Field field) {
-        return false;
+        if(field.hasBeenFertilized) {
+            field.setHasBeenHarvested(true);
+        }
+
+        return true;
     }
 
     @Override
     public String makeNoise() {
+
         return "hummmmmmmmmmmmmmmmmmm";
     }
 
     @Override
-    public Boolean mount(Person p) {
-        return null;
+    public Boolean mount(Person farmer) {
+        setMountDisMount(true);
+        return isMountDisMount();
     }
 
     @Override
     public Boolean dismount() {
-        return null;
+        setMountDisMount(false);
+        return isMountDisMount();
     }
 }

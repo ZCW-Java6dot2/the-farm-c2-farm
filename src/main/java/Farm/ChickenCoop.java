@@ -6,6 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ChickenCoop {
+    List<Chicken> chickenList;
 
-    List<Chicken> chickenList = new ArrayList<>();
+    public ChickenCoop(Integer numOfChicken) {
+        this.chickenList = new ArrayList<>();
+        for (int i = 0; i < numOfChicken; i++) {
+            this.chickenList.add(new Chicken());
+        }
+    }
 }
