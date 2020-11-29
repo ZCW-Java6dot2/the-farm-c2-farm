@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Field implements Produce {
-    public boolean hasBeenFertilized = false;
-    public boolean hasBeenHarvested = false;
+    public boolean Fertilized = false;
+    public boolean Harvested = false;
     List<Crop> cropRowList;
 
     public Field() {
@@ -17,41 +17,39 @@ public class Field implements Produce {
 
 
     public boolean isHasBeenFertilized() {
-        return hasBeenFertilized;
+        return Fertilized;
     }
 
     public void setHasBeenFertilized(boolean hasBeenFertilized) {
-        this.hasBeenFertilized = hasBeenFertilized;
+        this.Fertilized = hasBeenFertilized;
     }
 
     public boolean isHasBeenHarvested() {
-        return hasBeenHarvested;
+        return Harvested;
     }
 
     public void setHasBeenHarvested(boolean hasBeenHarvested) {
-        this.hasBeenHarvested = hasBeenHarvested;
+        this.Harvested = hasBeenHarvested;
     }
 
     public List<Crop> getCropRowList() {
         return cropRowList;
     }
 
-    public void setCropRowList(List<Crop> cropRowList) {
-        this.cropRowList = cropRowList;
-    }
 
     @Override
-    public void yield(Silo silo) {
+    public boolean yield(Silo silo) {
         Integer yieldOfPlantCrop = 0;
         String nameOfCrop = "";
         harvesting(silo);
         reinitializeField();
+        return true;
     }
 
     public void reinitializeField() {
         cropRowList.clear();
-        hasBeenFertilized = false;
-        hasBeenHarvested = false;
+        Fertilized = false;
+        Harvested = false;
     }
 
     public void harvesting(Silo silo) {
