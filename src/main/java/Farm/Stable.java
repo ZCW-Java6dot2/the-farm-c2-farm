@@ -16,10 +16,6 @@ public class Stable {
         }
     }
 
-    public void setHorseList(List<Horse> horseList) {
-        this.horseList = horseList;
-    }
-
     public void addHorses(Integer noOfHorses){
         Horse horse = new Horse();
 
