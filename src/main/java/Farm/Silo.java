@@ -26,47 +26,23 @@ public class Silo {
         return capsicum;
     }
 
-    public void setCapsicum(List<Capsicum> capsicum) {
-        this.capsicum = capsicum;
-    }
-
     public List<Carrot> getCarrot() {
         return carrot;
-    }
-
-    public void setCarrot(List<Carrot> carrot) {
-        this.carrot = carrot;
     }
 
     public List<EarCorn> getCorn() {
         return corn;
     }
 
-    public void setCorn(List<EarCorn> corn) {
-        this.corn = corn;
-    }
-
     public List<EarOfWheat> getWheat() {
         return wheat;
-    }
-
-    public void setWheat(List<EarOfWheat> wheat) {
-        this.wheat = wheat;
     }
 
     public List<Egg> getEgg() {
         return egg;
     }
 
-    public void setEgg(List<Egg> egg) {
-        this.egg = egg;
-    }
-
     public List<Tomato> getTomato() {
         return tomato;
-    }
-
-    public void setTomato(List<Tomato> tomato) {
-        this.tomato = tomato;
     }
 }
