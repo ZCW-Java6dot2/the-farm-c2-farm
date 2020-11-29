@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class SundayTest {
+public class MondayTest {
 
     Farm farm = new Farm();
     Farmer froiland = farm.getFroiland();
@@ -20,6 +20,7 @@ public class SundayTest {
     WheatStalk wheatStalk = new WheatStalk("wheat");
     CarrotPlant carrotPlant = new CarrotPlant("carrot");
     TomatoPlant tomatoPlant = new TomatoPlant("tomato");
+    CropDuster plane = farm.getCropDuster();
     FarmHouse farmhouse = farm.getFarmHouse();
     ChickenCoop chickenCoop1 = farm.getChickenCoop1();
     ChickenCoop chickenCoop2 = farm.getChickenCoop2();
@@ -39,7 +40,7 @@ public class SundayTest {
             Assert.assertEquals(expected, actual);
             Assert.assertTrue(actualBoolean);
         }
-        
+
     }
 
     @Test
@@ -197,6 +198,17 @@ public class SundayTest {
         Assert.assertEquals(expected, actualWheat);
         Assert.assertEquals(expected, actualCarrot);
         Assert.assertEquals(expected, actualTomato);
+    }
+
+    @Test
+    public void mondayFertilizerTest() {
+        boolean expected = true;
+
+        Assert.assertTrue(plane.operate(field, silo));
+
+        boolean actual = field.isHasBeenFertilized();
+
+        Assert.assertEquals(expected, actual);
     }
 
 

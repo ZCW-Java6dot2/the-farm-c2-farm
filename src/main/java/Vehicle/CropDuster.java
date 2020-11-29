@@ -13,7 +13,7 @@ public class CropDuster extends FarmVehicle implements Rideable, Flyable {
     }
 
     @Override
-    boolean operate(Field field, Silo silo) {
+    public boolean operate(Field field, Silo silo) {
         if (flying() && !field.Fertilized) {
             field.setHasBeenFertilized(true);
         }

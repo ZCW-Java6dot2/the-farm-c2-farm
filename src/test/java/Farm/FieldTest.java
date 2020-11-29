@@ -1,8 +1,6 @@
 package Farm;
 
-import Items.Capsicum;
-import Items.CapsicumPlant;
-import Items.TomatoPlant;
+import Items.*;
 import Person.Farmer;
 import org.junit.Assert;
 import org.junit.Test;
@@ -14,6 +12,10 @@ public class FieldTest {
     Field field = farm.getField();
     Farmer farmer = new Farmer("Billy Ray");
     TomatoPlant tomatoPlant = new TomatoPlant("tomato");
+    WheatStalk wheatStalk = new WheatStalk("wheat");
+    CarrotPlant carrotPlant = new CarrotPlant("carrot");
+    CornStalk cornStalk = new CornStalk("corn");
+    CapsicumPlant capsicumPlant = new CapsicumPlant("capsicum");
     Silo silo = new Silo();
 
     @Test
@@ -44,10 +46,23 @@ public class FieldTest {
 
         //When
         farmer.plant(farm.getField(), tomatoPlant, "tomato", 5);
-        int actual = field.getCropRowList().get(0).getCropRow().size();
+        farmer.plant(farm.getField(), wheatStalk, "wheat", 5);
+        farmer.plant(farm.getField(), carrotPlant, "carrot", 5);
+        farmer.plant(farm.getField(), cornStalk, "corn", 5);
+        farmer.plant(farm.getField(), capsicumPlant, "capsicum", 5);
+
+        int actualTomato = field.getCropRowList().get(0).getCropRow().size();
+        int actualWheat = field.getCropRowList().get(1).getCropRow().size();
+        int actualCarrot = field.getCropRowList().get(2).getCropRow().size();
+        int actualCorn = field.getCropRowList().get(3).getCropRow().size();
+        int actualCapsicum = field.getCropRowList().get(4).getCropRow().size();
 
         //Then
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, actualTomato);
+        Assert.assertEquals(expected, actualWheat);
+        Assert.assertEquals(expected, actualCarrot);
+        Assert.assertEquals(expected, actualCorn);
+        Assert.assertEquals(expected, actualCapsicum);
     }
 
 
