@@ -8,7 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Farm {
-    private Stable stable;
+    private final Stable stable1;
+    private final Stable stable2;
+    private final Stable stable3;
     private final ChickenCoop chickenCoop1;
     private final ChickenCoop chickenCoop2;
     private final ChickenCoop chickenCoop3;
@@ -22,7 +24,9 @@ public class Farm {
     private List<ChickenCoop> chickenCoopList = new ArrayList<>();
 
     public Farm() {
-        this.stable = new Stable(3);
+        this.stable1 = new Stable(3);
+        this.stable2 = new Stable(3);
+        this.stable3 = new Stable(4);
         this.chickenCoop1 = new ChickenCoop(3);
         this.chickenCoop2 = new ChickenCoop(4);
         this.chickenCoop3 = new ChickenCoop(4);
@@ -74,5 +78,21 @@ public class Farm {
 
     public Farmer getFroiland() {
         return froiland;
+    }
+
+    public Stable getStable1() {
+        return stable1;
+    }
+
+    public Stable getStable2() {
+        return stable2;
+    }
+
+    public Stable getStable3() {
+        return stable3;
+    }
+
+    public List<ChickenCoop> getChickenCoopList() {
+        return chickenCoopList;
     }
 }

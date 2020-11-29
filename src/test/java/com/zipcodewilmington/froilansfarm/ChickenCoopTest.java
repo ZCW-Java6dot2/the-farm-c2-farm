@@ -8,15 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ChickenCoopTest {
-//    Chicken chicken1 = new Chicken();
-//    Chicken chicken2 = new Chicken();
-//    Chicken chicken3 = new Chicken();
-//    Chicken chicken4 = new Chicken();
-//    List<Chicken> chickenList1 = new ArrayList<>();
-//    List<Chicken> chickenList2 = new ArrayList<>();
-//    ArrayList<ChickenCoop> chickenCoops = new ArrayList<ChickenCoop>();
-//    ChickenCoop chickenCoop1=new ChickenCoop();
-//    ChickenCoop chickenCoop2=new ChickenCoop();
+
+    Farm farmTest = new Farm();
+    Chicken chicken = farmTest.getChickenCoop1().getChickenList().get(0);
 //
 //
 //    @Before
