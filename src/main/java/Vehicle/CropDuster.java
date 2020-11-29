@@ -8,10 +8,9 @@ import Person.Person;
 import Person.Pilot;
 
 public class CropDuster extends FarmVehicle implements Rideable, Flyable {
-    private Pilot pilot;
 
-    public CropDuster(Pilot pilot) {
-        this.pilot = pilot;
+    public CropDuster(Person pilot, boolean mountDisMount) {
+        super(pilot, mountDisMount);
     }
 
     @Override

@@ -110,4 +110,15 @@ public class FarmTest {
         //Then
         Assert.assertTrue(farmTest.getFroiland() instanceof Person);
     }
+
+    @Test
+    public void getSilo() {
+        //Given
+        Farm farmTest = new Farm();
+
+        Silo expected = farmTest.getSilo();
+
+        //Then
+        Assert.assertEquals(expected, farmTest.getSilo());
+    }
 }

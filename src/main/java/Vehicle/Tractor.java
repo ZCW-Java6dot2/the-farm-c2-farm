@@ -9,8 +9,8 @@ import Person.Person;
 public class Tractor extends FarmVehicle implements Rideable {
     private Farmer farmer;
 
-    public Tractor(Farmer farmer) {
-        this.farmer = farmer;
+    public Tractor(Person farmer, boolean mountDisMount) {
+        super(farmer, mountDisMount);
     }
 
     @Override
