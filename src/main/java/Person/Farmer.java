@@ -21,8 +21,5 @@ public class Farmer extends Person implements Botanist {
         field.getCropRowList().add(cropRow);
     }
 
-    @Override
-    public void eat(Produce p) {
 
-    }
 }
