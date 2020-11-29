@@ -17,6 +17,7 @@ public class Farm {
     private final ChickenCoop chickenCoop3;
     private final ChickenCoop chickenCoop4;
     private final FarmHouse farmHouse;
+    private final Silo silo;
     private final Field field;
     private final Tractor tractor;
     private final Pilot froilanda;
@@ -32,14 +33,18 @@ public class Farm {
         this.chickenCoop2 = new ChickenCoop(4);
         this.chickenCoop3 = new ChickenCoop(4);
         this.chickenCoop4 = new ChickenCoop(4);
+        this.silo = new Silo();
         this.froiland = new Farmer("Froiland");
-        this.tractor = new Tractor(froiland);
+        this.tractor = new Tractor(froiland, true);
         this.field = new Field();
         this.froilanda = new Pilot("Froilanda");
-        this.cropDuster = new CropDuster(froilanda);
+        this.cropDuster = new CropDuster(froilanda, true);
         this.farmHouse = new FarmHouse(froiland, froilanda);
     }
 
+    public Silo getSilo() {
+        return silo;
+    }
 
     public ChickenCoop getChickenCoop1() {
         return chickenCoop1;
