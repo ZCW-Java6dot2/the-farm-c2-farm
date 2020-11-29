@@ -17,8 +17,6 @@ public class Stable {
         }
     }
 
-
-
     public void setHorseList(List<Horse> horseList) {
         this.horseList = horseList;
     }
