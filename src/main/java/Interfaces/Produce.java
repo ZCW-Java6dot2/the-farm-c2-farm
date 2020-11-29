@@ -4,6 +4,6 @@ import Farm.Silo;
 
 public interface Produce {
 
-    void yield(Silo silo);
+    boolean yield(Silo silo);
 
 }

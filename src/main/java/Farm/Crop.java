@@ -16,7 +16,8 @@ public class Crop<T extends Crop> implements Produce {
     }
 
     @Override
-    public void yield(Silo silo) {
+    public boolean yield(Silo silo) {
+        return true;
     }
 
     public String getName() {

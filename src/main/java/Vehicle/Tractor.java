@@ -15,7 +15,7 @@ public class Tractor extends FarmVehicle implements Rideable {
 
     @Override
     boolean operate(Field field, Silo silo) {
-        if(isMountDisMount() && field.hasBeenFertilized) {
+        if(isMountDisMount() && field.Fertilized) {
             field.setHasBeenHarvested(true);
             field.yield(silo);
         }

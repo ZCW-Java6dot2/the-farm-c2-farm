@@ -19,8 +19,8 @@ public class Chicken extends Animal implements Produce {
     }
 
     @Override
-    public void yield(Silo silo) {
-
+    public boolean yield(Silo silo) {
+        return true;
     }
 
 
