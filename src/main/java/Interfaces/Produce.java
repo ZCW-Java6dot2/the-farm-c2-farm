@@ -1,8 +1,9 @@
 package Interfaces;
 
+import Farm.Silo;
+
 public interface Produce {
 
-    void yield();
+    boolean yield(Silo silo);
 
-    void hasBeenFertilized();
 }

@@ -1,6 +1,6 @@
 package Items;
 
-import Interfaces.Edible;
+import Interfaces.String;
 
-public class EarCorn implements Edible {
+public class EarCorn implements String {
 }

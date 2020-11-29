@@ -2,5 +2,5 @@ package Items;
 
 import Interfaces.String;
 
-public class Tomato implements String {
+public class Carrot implements String {
 }

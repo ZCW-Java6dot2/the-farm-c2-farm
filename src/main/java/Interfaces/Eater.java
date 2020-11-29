@@ -1,7 +1,9 @@
 package Interfaces;
 
+import Farm.Silo;
+import java.lang.String;
 public interface Eater {
 
-    void eat();
+    void eat(String food, int howMuchEaten, Silo silo);
 
 }

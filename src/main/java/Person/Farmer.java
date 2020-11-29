@@ -1,19 +1,26 @@
 package Person;
 
+import Farm.Crop;
+import Farm.Field;
 import Interfaces.Botanist;
-import Interfaces.Rider;
 
-public class Farmer extends Person implements Rider, Botanist {
+public class Farmer extends Person implements Botanist {
 
-    public void plant() {
-
+    public Farmer(String name) {
+        super(name);
     }
 
-    public void mount() {
-
+    @Override
+    public <T extends Crop> void plant(Field field, T plantType, String plantName, int numOfPlants) {
+       Crop<T> cropRow = new Crop<T>(plantName);
+        for (int i = 0; i < numOfPlants; i++) {
+            cropRow.getCropRow().add(plantType);
+        }
+        field.getCropRowList().add(cropRow);
     }
 
-    public void dismount() {
-
+    @Override
+    public String makeNoise() {
+        return "Alpha Room, Now!";
     }
 }
