@@ -41,6 +41,10 @@ public class Horse extends Animal implements Rideable {
         return this.mountDisMount;
     }
 
+    public String rideHorse() {
+        return "Horse has been ridden";
+    }
+
     @Override
     public void eat(String food, int howMuchEaten, Silo silo) {
         super.eat(food, howMuchEaten, silo);
