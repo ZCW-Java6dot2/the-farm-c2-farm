@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class SundayTest {
+public class FridayTest {
 
     Farm farm = new Farm();
     Farmer froiland = farm.getFroiland();
@@ -20,6 +20,9 @@ public class SundayTest {
     WheatStalk wheatStalk = new WheatStalk("wheat");
     CarrotPlant carrotPlant = new CarrotPlant("carrot");
     TomatoPlant tomatoPlant = new TomatoPlant("tomato");
+    CapsicumPlant capsicumPlant = new CapsicumPlant("capsicum");
+    CropDuster plane = farm.getCropDuster();
+    Tractor tractor = farm.getTractor();
     FarmHouse farmhouse = farm.getFarmHouse();
     ChickenCoop chickenCoop1 = farm.getChickenCoop1();
     ChickenCoop chickenCoop2 = farm.getChickenCoop2();
@@ -39,7 +42,7 @@ public class SundayTest {
             Assert.assertEquals(expected, actual);
             Assert.assertTrue(actualBoolean);
         }
-        
+
     }
 
     @Test
@@ -197,6 +200,44 @@ public class SundayTest {
         Assert.assertEquals(expected, actualWheat);
         Assert.assertEquals(expected, actualCarrot);
         Assert.assertEquals(expected, actualTomato);
+    }
+
+    @Test
+    public void mondayFertilizerTest() {
+        boolean expected = true;
+
+        Assert.assertTrue(plane.operate(field, silo));
+
+        boolean actual = field.isHasBeenFertilized();
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void tuesdayHarvestTest() {
+
+        Assert.assertTrue(tractor.operate(field, silo));
+        Assert.assertTrue(field.yield(farm.getSilo()));
+
+    }
+
+    @Test
+    public void chickenEatTest() {
+        //When
+        for (int i = 0; i < 10 ; i++) {
+            silo.getCapsicum().add(new Capsicum());
+        }
+
+
+        chickenCoop1.getChickenList().get(0).eat("capsicum", 2, silo);
+
+
+        int expectedCapscicum = 8;
+
+        int actualCapsicum = silo.getCapsicum().size();
+
+        Assert.assertEquals(expectedCapscicum, actualCapsicum);
+
     }
 
 

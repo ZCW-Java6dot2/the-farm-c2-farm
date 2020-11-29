@@ -8,6 +8,11 @@ import Person.Person;
 public class Horse extends Animal implements Rideable {
     private Boolean mountDisMount;
     private Person rider;
+    private Boolean riddenToday;
+
+    public Horse() {
+        this.riddenToday = false;
+    }
 
     public Person getRider() {
         return rider;
@@ -42,7 +47,12 @@ public class Horse extends Animal implements Rideable {
     }
 
     public String rideHorse() {
+        this.riddenToday = true;
         return "Horse has been ridden";
+    }
+
+    public Boolean getRiddenToday() {
+        return this.riddenToday;
     }
 
     @Override
