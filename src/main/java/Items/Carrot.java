@@ -1,6 +1,6 @@
 package Items;
 
-import Interfaces.Edible;
+import Interfaces.String;
 
-public class Carrot implements Edible {
+public class Carrot implements String {
 }

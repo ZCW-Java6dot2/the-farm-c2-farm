@@ -1,8 +1,8 @@
 package Items;
 
-import Interfaces.Edible;
+import Interfaces.String;
 
-public class Egg implements Edible {
+public class Egg implements String {
 
     boolean hasBeenFertilized = false;
 }

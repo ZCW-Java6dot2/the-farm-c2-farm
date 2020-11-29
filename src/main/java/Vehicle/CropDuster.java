@@ -5,7 +5,6 @@ import Farm.Silo;
 import Interfaces.Flyable;
 import Interfaces.Rideable;
 import Person.Person;
-import Person.Pilot;
 
 public class CropDuster extends FarmVehicle implements Rideable, Flyable {
 

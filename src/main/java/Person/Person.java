@@ -1,20 +1,14 @@
 package Person;
 
 import Animal.Animal;
+import Farm.Silo;
+import java.lang.String;
 
 public class Person extends Animal {
     private String name;
 
-    public Person() {
-        this.name = "";
-    }
-
     public Person(String name) {
         this.name = name;
-    }
-
-    public void eat() {
-
     }
 
     public String makeNoise() {
@@ -25,4 +19,8 @@ public class Person extends Animal {
         return name;
     }
 
+    @Override
+    public void eat(String food, int howMuchEaten, Silo silo) {
+        super.eat(food, howMuchEaten, silo);
+    }
 }
