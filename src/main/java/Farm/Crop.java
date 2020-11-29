@@ -24,15 +24,8 @@ public class Crop<T extends Crop> implements Produce {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public List<Crop> getCropRow() {
         return cropRow;
     }
 
-    public void setCropRow(List<Crop> cropRow) {
-        this.cropRow = cropRow;
-    }
 }
