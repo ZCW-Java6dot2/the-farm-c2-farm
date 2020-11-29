@@ -1,5 +1,6 @@
 package Farm;
 
+import Animal.Chicken;
 import Animal.Horse;
 
 import java.util.ArrayList;
@@ -7,11 +8,16 @@ import java.util.List;
 
 public class Stable {
 
-    private List<Horse> horseList = new ArrayList<>();
+    private List<Horse> horseList;
 
-    public List<Horse> getHorseList() {
-        return horseList;
+    public Stable(Integer numOfHorses) {
+        this.horseList = new ArrayList<>();
+        for (int i = 0; i < numOfHorses; i++) {
+            this.horseList.add(new Horse());
+        }
     }
+
+
 
     public void setHorseList(List<Horse> horseList) {
         this.horseList = horseList;
@@ -23,6 +29,9 @@ public class Stable {
         for(int x = 0; x < noOfHorses; x++){
             horseList.add(horse);
         }
+    }
+    public List<Horse> getHorseList() {
+        return horseList;
     }
 
     public void removeHorses(Integer noToRemove){

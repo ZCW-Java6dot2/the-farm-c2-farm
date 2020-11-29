@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HorseTest {
-  //  Farm farm= new Farm();
+    Farm farm= new Farm();
     Horse horse1 = new Horse();
     Horse horse2 = new Horse();
     Horse horse3= new Horse();
