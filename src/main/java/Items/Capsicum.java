@@ -1,8 +1,8 @@
 package Items;
 
-import Interfaces.Edible;
+import Interfaces.String;
 
-public class Capsicum implements Edible {
+public class Capsicum implements String {
 
 
 }

@@ -23,7 +23,7 @@ public class Farm {
     private final Pilot froilanda;
     private final CropDuster cropDuster;
     private final Farmer froiland;
-    private List<ChickenCoop> chickenCoopList = new ArrayList<>();
+    private List<ChickenCoop> chickenCoopList;
 
     public Farm() {
         this.stable1 = new Stable(3);
@@ -33,6 +33,7 @@ public class Farm {
         this.chickenCoop2 = new ChickenCoop(4);
         this.chickenCoop3 = new ChickenCoop(4);
         this.chickenCoop4 = new ChickenCoop(4);
+
         this.silo = new Silo();
         this.froiland = new Farmer("Froiland");
         this.tractor = new Tractor(froiland, true);

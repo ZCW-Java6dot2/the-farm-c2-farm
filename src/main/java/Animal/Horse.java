@@ -1,5 +1,7 @@
 package Animal;
 
+import Farm.Silo;
+import java.lang.String;
 import Interfaces.Rideable;
 import Person.Person;
 
@@ -39,4 +41,8 @@ public class Horse extends Animal implements Rideable {
         return this.mountDisMount;
     }
 
+    @Override
+    public void eat(String food, int howMuchEaten, Silo silo) {
+        super.eat(food, howMuchEaten, silo);
+    }
 }

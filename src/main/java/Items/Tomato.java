@@ -1,6 +1,6 @@
 package Items;
 
-import Interfaces.Edible;
+import Interfaces.String;
 
-public class Tomato implements Edible {
+public class Tomato implements String {
 }

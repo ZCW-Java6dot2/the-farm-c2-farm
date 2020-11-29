@@ -13,12 +13,12 @@ public class ChickenCoop {
         this.chickenList = new ArrayList<>();
 
         for (int i = 0; i < numOfChicken; i++) {
-            this.chickenList.add(new Chicken());
+            this.chickenList.add(new Chicken(false));
         }
     }
 
     public void addChickens(Integer noOfChickens) {
-        Chicken chicken = new Chicken();
+        Chicken chicken = new Chicken(false);
 
         for (int x = 0; x < noOfChickens; x++) {
             chickenList.add(chicken);

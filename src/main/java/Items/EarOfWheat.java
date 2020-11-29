@@ -1,7 +1,7 @@
 package Items;
 
-import Interfaces.Edible;
+import Interfaces.String;
 
 
-public class EarOfWheat implements Edible {
+public class EarOfWheat implements String {
 }
