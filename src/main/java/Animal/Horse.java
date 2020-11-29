@@ -1,8 +1,5 @@
 package Animal;
 
-import Farm.Silo;
-import Interfaces.Edible;
-import Interfaces.Produce;
 import Interfaces.Rideable;
 import Person.Person;
 

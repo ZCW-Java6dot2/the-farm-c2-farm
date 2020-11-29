@@ -1,7 +1,6 @@
 package Person;
 
 import Animal.Animal;
-import Interfaces.Produce;
 
 public class Person extends Animal {
     private String name;
@@ -19,14 +18,11 @@ public class Person extends Animal {
     }
 
     public String makeNoise() {
-    return "talk talk";
+        return "talk talk";
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }
