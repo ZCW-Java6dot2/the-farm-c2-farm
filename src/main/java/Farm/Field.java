@@ -1,11 +1,7 @@
 package Farm;
 
 import Interfaces.Produce;
-import Items.Capsicum;
-import Items.Carrot;
-import Items.EarCorn;
-import Items.EarOfWheat;
-import Items.Tomato;
+import Items.*;
 
 import java.util.ArrayList;
 import java.util.List;

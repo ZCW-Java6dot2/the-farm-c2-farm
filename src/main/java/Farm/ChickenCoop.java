@@ -1,7 +1,6 @@
 package Farm;
 
 import Animal.Chicken;
-import Animal.Horse;
 
 import java.util.ArrayList;
 import java.util.List;

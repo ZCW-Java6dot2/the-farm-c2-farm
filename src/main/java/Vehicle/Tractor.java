@@ -3,8 +3,8 @@ package Vehicle;
 import Farm.Field;
 import Farm.Silo;
 import Interfaces.Rideable;
-import Person.Person;
 import Person.Farmer;
+import Person.Person;
 
 public class Tractor extends FarmVehicle implements Rideable {
     private Farmer farmer;

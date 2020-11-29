@@ -1,10 +1,8 @@
 package Person;
 
 import Farm.Crop;
-import Interfaces.Botanist;
-import Interfaces.Produce;
-
 import Farm.Field;
+import Interfaces.Botanist;
 
 public class Farmer extends Person implements Botanist {
 
@@ -21,5 +19,8 @@ public class Farmer extends Person implements Botanist {
         field.getCropRowList().add(cropRow);
     }
 
-
+    @Override
+    public String makeNoise() {
+        return "Alpha Room, Now!";
+    }
 }
